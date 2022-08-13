@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionHome"
+        android:icon="@drawable/selector_item_home"
+        android:title="@string/menu_item_home"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/actionNew"
+        android:icon="@drawable/selector_item_new"
+        android:title="@string/menu_item_new"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/actionLaugh"
+        android:icon="@drawable/selector_item_laugh"
+        android:title="@string/menu_item_laugh"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@drawable/selector_item_search"
+        android:title="@string/menu_item_search"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/actionDownload"
+        android:icon="@drawable/selector_item_download"
+        android:title="@string/menu_item_download"
+        app:showAsAction="withText" />
+
+</menu>

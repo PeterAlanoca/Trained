@@ -10,6 +10,12 @@
         <entry key="..\:/Users/peter/AndroidStudioProjects/Netflix/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
         <entry key="..\:/Users/peter/AndroidStudioProjects/Netflix/app/src/main/res/layout/item_pager_welcome.xml" value="0.2830269345874305" />
         <entry key="..\:/Users/peter/AndroidStudioProjects/Netflix/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.34479166666666666" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/gradient_bottom_welcome_item.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/ic_arrow_back_ios_24dp.xml" value="0.2625" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/ic_cast_48dp.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/ic_clipboard_question_solid.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/ic_close_48dp.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/activity_login.xml" value="0.33" />
       </map>
     </option>
   </component>

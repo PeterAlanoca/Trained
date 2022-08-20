@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.boliviandeveloper.netflix.R
 import com.boliviandeveloper.netflix.databinding.ActivityWelcomeBinding
-import com.boliviandeveloper.netflix.model.WelcomeItem
+import com.boliviandeveloper.netflix.model.entity.WelcomeItem
 import com.boliviandeveloper.netflix.view.adapter.WelcomeItemPagerAdapter
 import com.boliviandeveloper.netflix.view.ui.login.LoginActivity
 

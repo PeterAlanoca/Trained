@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.boliviandeveloper.netflix.databinding.ItemPagerWelcomeBinding
-import com.boliviandeveloper.netflix.model.WelcomeItem
+import com.boliviandeveloper.netflix.model.entity.WelcomeItem
 
 class WelcomeItemPagerAdapter(private var items: List<WelcomeItem> = emptyList()) : RecyclerView.Adapter<WelcomeItemPagerAdapter.WelcomeItemPagerHolder>() {
 

@@ -1,4 +1,4 @@
-package com.boliviandeveloper.netflix.model
+package com.boliviandeveloper.netflix.model.entity
 
 class WelcomeItem (
     val id: Int,

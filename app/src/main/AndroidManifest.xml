@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.boliviandeveloper.netflix">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".NetflixApplication"
         android:allowBackup="true"
@@ -13,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Netflix"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
         <activity
@@ -21,11 +24,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Login">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
@@ -42,9 +40,22 @@
             android:theme="@style/Theme.Splash">
 
         </activity>
+
         <activity
-            android:name=".view.ui.menu.MainActivity"
-            android:exported="true" />
+            android:name=".view.ui.menu.MenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
     </application>
 
 </manifest>

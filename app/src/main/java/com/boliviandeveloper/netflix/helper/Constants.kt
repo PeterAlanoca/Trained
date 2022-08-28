@@ -1,4 +1,6 @@
 package com.boliviandeveloper.netflix.helper
 
-class Constants {
+object Constants {
+
+    const val FRAGMENT_DETAIL = "FRAGMENT_DETAIL"
 }

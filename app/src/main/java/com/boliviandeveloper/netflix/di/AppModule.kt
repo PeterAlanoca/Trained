@@ -2,6 +2,8 @@ package com.boliviandeveloper.netflix.di
 
 import com.boliviandeveloper.netflix.BuildConfig
 import com.boliviandeveloper.netflix.helper.http.Authorization
+import com.boliviandeveloper.netflix.model.repository.datasource.remote.SectionService
+import com.boliviandeveloper.netflix.model.repository.datasource.remote.UserService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -11,6 +13,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
@@ -58,4 +61,11 @@ object AppModule {
             .build()
     }
 
+    @Provides
+    @Singleton
+    fun providesUserService(retrofit: Retrofit) : UserService = retrofit.create(UserService::class.java)
+
+    @Provides
+    @Singleton
+    fun providesSectionService(retrofit: Retrofit) : SectionService = retrofit.create(SectionService::class.java)
 }

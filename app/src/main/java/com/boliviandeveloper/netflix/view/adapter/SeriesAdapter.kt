@@ -15,6 +15,7 @@ class SeriesAdapter(series: List<Serie>): RecyclerView.Adapter<SeriesAdapter.Ser
 
     private lateinit var context: Context
     private var series: MutableList<Serie>
+    private var action: ((Serie) -> Unit)? = null
 
     init {
         this.series = series.toMutableList()
@@ -55,8 +56,16 @@ class SeriesAdapter(series: List<Serie>): RecyclerView.Adapter<SeriesAdapter.Ser
                 .centerCrop()
                 .placeholder(R.drawable.shape_placeholder_image)
                 .into(binding.coverImageView)
-        }
 
+            itemView.setOnClickListener {
+                action?.let { action ->
+                    action(serie)
+                }
+            }
+        }
     }
 
+    fun onSelected(action: (Serie) -> Unit) {
+        this.action = action
+    }
 }

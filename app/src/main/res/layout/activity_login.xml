@@ -89,7 +89,8 @@
                     android:minHeight="50dp"
                     android:paddingBottom="4dp"
                     android:textColor="@color/white"
-                    android:textCursorDrawable="@color/white" />
+                    android:textCursorDrawable="@color/white"
+                    android:text="haag.tod@example.net"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +115,8 @@
                     android:minHeight="50dp"
                     android:paddingBottom="4dp"
                     android:textColor="@color/white"
-                    android:textCursorDrawable="@color/white" />
+                    android:textCursorDrawable="@color/white"
+                    android:text="123456"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -18,14 +18,23 @@
         <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/ic_close_48dp.xml" value="0.2335" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/menu_item_color_state.xml" value="0.2335" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/shape_placeholder_image.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/shape_player_circle.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/shape_serie_definition.xml" value="0.2335" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/drawable/shape_serie_year.xml" value="0.2335" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/activity_player.xml" value="0.1" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_download.xml" value="0.1" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_episodes.xml" value="0.2821718683197948" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_new.xml" value="0.1" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_serie.xml" value="0.41033138401559455" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/fragment_similar.xml" value="0.1" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/item_episodes.xml" value="0.22" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/item_sections.xml" value="0.2821718683197948" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/item_series.xml" value="0.5" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/layout/laugh_fragment.xml" value="0.1" />
+        <entry key="..\:/diplomado/Trained/app/src/main/res/layout/layout_playback_control.xml" value="0.2830269345874305" />
         <entry key="..\:/diplomado/Trained/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2830269345874305" />
       </map>
     </option>

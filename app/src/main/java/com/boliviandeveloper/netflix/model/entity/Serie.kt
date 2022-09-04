@@ -31,5 +31,7 @@ data class Serie(
     @SerializedName("resolution")
     val resolution: String,
     @SerializedName("seasons_count")
-    val seasonsCount: String
+    val seasonsCount: String,
+    @SerializedName("seasons")
+    val seasons: List<Season>
 ) : Serializable

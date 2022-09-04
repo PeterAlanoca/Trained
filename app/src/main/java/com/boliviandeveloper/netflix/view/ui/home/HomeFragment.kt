@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.boliviandeveloper.netflix.R
 import com.boliviandeveloper.netflix.databinding.FragmentHomeBinding
+import com.boliviandeveloper.netflix.helper.extesion.push
 import com.boliviandeveloper.netflix.model.repository.datasource.Resource
 import com.boliviandeveloper.netflix.view.adapter.SectionsAdapter
 import com.boliviandeveloper.netflix.viewmodel.HomeViewModel
@@ -54,20 +55,22 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
                                 binding.genderTextView.text = data.cover.gender
 
                                 val sectionsAdapter = SectionsAdapter(data.sections)
-
+                                sectionsAdapter.onSelected { serie ->
+                                    viewModel.serie = serie
+                                    push(SerieFragment.newInstance())
+                                }
                                 binding.sectionsRecyclerView.apply {
                                     adapter = sectionsAdapter
                                     setHasFixedSize(true)
                                     setItemViewCacheSize(40)
                                 }
 
-
+                                binding.playButton.setOnClickListener {
+                                    viewModel.serie = data.cover
+                                    push(SerieFragment.newInstance())
+                                }
                             }
                         }
-
-
-
-
                     }
                     Resource.Status.LOADING -> {
 

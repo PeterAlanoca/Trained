@@ -9,7 +9,7 @@ data class Response<T>(
     @SerializedName("state")
     val state: Int,
     @SerializedName("data")
-    val data: T
+    val data: T? = null
 ) : Serializable {
 
     companion object {

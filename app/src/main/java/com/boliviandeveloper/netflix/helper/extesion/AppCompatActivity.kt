@@ -1,10 +1,12 @@
 package com.boliviandeveloper.netflix.helper.extesion
 
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.boliviandeveloper.netflix.R
 import com.boliviandeveloper.netflix.helper.Constants
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 fun AppCompatActivity.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -23,4 +25,21 @@ fun AppCompatActivity.push(fragment: Fragment) {
         .addToBackStack(null)
         .commitAllowingStateLoss()
 }
+
+fun AppCompatActivity.back() {
+    if (supportFragmentManager.backStackEntryCount > 0) {
+        supportFragmentManager.popBackStack()
+    } else {
+        finish()
+    }
+}
+
+fun AppCompatActivity.hideMenuBottom() {
+    findViewById<BottomNavigationView>(R.id.bottomNavigationView).visibility = View.GONE
+}
+
+fun AppCompatActivity.showMenuBottom() {
+    findViewById<BottomNavigationView>(R.id.bottomNavigationView).visibility = View.VISIBLE
+}
+
 
